@@ -1,17 +1,9 @@
-/* ====================================
-// css variables
-// ==================================== */
-
 :root {
   --beige: #ebead2;
   --grey: #979797;
   --white: #fff;
   --black: #000;
 }
-
-/* ====================================
-// reset rules
-// ==================================== */
 
 * {
   box-sizing: border-box;
@@ -27,9 +19,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 a {
@@ -43,6 +37,70 @@ video {
   vertical-align: middle;
 }
 
-/* ====================================
-// base rules
-// ==================================== */
+.box {
+  background-color: var(--white);
+  border: var(--grey) solid 0.5px;
+}
+
+.section {
+  background-color: var(--beige);
+  display: flex;
+  margin: 30px 17px;
+  padding: 15px 0;
+}
+
+.section-1 .box {
+  width: 25%;
+}
+
+.section-2 {
+  flex-flow: row wrap;
+}
+
+.section-2 .box {
+  width: 50%;
+}
+
+.section-3 {
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-3 .box {
+  width: 50px;
+}
+
+.section-4 {
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section-4 .box {
+  width: calc(50% - 10px);
+}
+
+.section-5 {
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.section-5 .box {
+  width: 50px;
+}
+
+.section-5 .box-s {
+  height: 35px;
+}
+
+.section-5 .box-l {
+  height: 79px;
+}
+
+.section-5 .box-m {
+  height: 49px;
+}
+
+.section-5 .box-xl {
+  height: 96px;
+}
